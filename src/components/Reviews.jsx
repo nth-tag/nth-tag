@@ -50,11 +50,12 @@ const Reviews = () => {
       <Row>
         {reviews.map((review, index) => (
           <Col md={4} key={index} className="mb-4">
-            <Card className="h-100">
+            <Card className="service-card h-100 p-2">
               <Card.Body>
-                <blockquote className="blockquote mb-0">
-                  <p>{review.text}</p>
-                  <footer className="blockquote-footer">
+                <div className="text-warning mb-2">★★★★★</div>
+                <blockquote className="blockquote mb-0 fs-6">
+                  <p className="mb-3 fst-italic">"{review.text}"</p>
+                  <footer className="blockquote-footer text-info">
                     {review.author}
                   </footer>
                 </blockquote>

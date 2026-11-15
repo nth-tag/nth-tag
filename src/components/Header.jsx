@@ -7,7 +7,7 @@ const Header = () => {
       <Container>
         <Navbar.Brand href="#home">
           <img
-            src={process.env.PUBLIC_URL + "/images/logo.png"}
+            src={`${import.meta.env.BASE_URL}images/logo.png`}
             height="30"
             className="d-inline-block align-top"
             alt="Nth-Tag Logo"

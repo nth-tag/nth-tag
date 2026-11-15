@@ -56,7 +56,7 @@ const Contact = () => {
           <div className="d-flex align-items-center">
             {socialLinks.map(({ name, url, icon }) => (
               <a key={name} href={url} target="_blank" rel="noopener noreferrer" className="me-3">
-               <img src={process.env.PUBLIC_URL + icon} alt={`${name} logo`} height="40" />
+               <img src={`${import.meta.env.BASE_URL}${icon.startsWith('/') ? icon.slice(1) : icon}`} alt={`${name} logo`} height="40" />
               </a>
             ))}
           </div>

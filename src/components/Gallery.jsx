@@ -31,7 +31,7 @@ const Gallery = () => {
       <div className="masonry-grid">
         {images.map((src, index) => (
           <div key={index} className="masonry-grid-item">
-            <Image src={src} alt={`Gallery image ${index + 1}`} thumbnail />
+            <Image src={`${import.meta.env.BASE_URL}${src}`} alt={`Gallery image ${index + 1}`} thumbnail />
           </div>
         ))}
       </div>
